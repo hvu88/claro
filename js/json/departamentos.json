@@ -1,0 +1,242 @@
+[
+  {
+    "buscador_ubigeo": "amazonas perú",
+    "codigo_ubigeo": "01",
+    "etiqueta_ubigeo": "Amazonas, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "2534",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Amazonas",
+    "numero_hijos_ubigeo": "7"
+  },
+  {
+    "buscador_ubigeo": "ancash perú",
+    "codigo_ubigeo": "02",
+    "etiqueta_ubigeo": "Ancash, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "2625",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Ancash",
+    "numero_hijos_ubigeo": "20"
+  },
+  {
+    "buscador_ubigeo": "apurimac perú",
+    "codigo_ubigeo": "03",
+    "etiqueta_ubigeo": "Apurimac, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "2812",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Apurimac",
+    "numero_hijos_ubigeo": "7"
+  },
+  {
+    "buscador_ubigeo": "arequipa perú",
+    "codigo_ubigeo": "04",
+    "etiqueta_ubigeo": "Arequipa, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "2900",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Arequipa",
+    "numero_hijos_ubigeo": "8"
+  },
+  {
+    "buscador_ubigeo": "ayacucho perú",
+    "codigo_ubigeo": "05",
+    "etiqueta_ubigeo": "Ayacucho, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3020",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Ayacucho",
+    "numero_hijos_ubigeo": "11"
+  },
+  {
+    "buscador_ubigeo": "cajamarca perú",
+    "codigo_ubigeo": "06",
+    "etiqueta_ubigeo": "Cajamarca, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3143",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Cajamarca",
+    "numero_hijos_ubigeo": "13"
+  },
+  {
+    "buscador_ubigeo": "cusco perú",
+    "codigo_ubigeo": "08",
+    "etiqueta_ubigeo": "Cusco, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3292",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Cusco",
+    "numero_hijos_ubigeo": "13"
+  },
+  {
+    "buscador_ubigeo": "huancavelica perú",
+    "codigo_ubigeo": "09",
+    "etiqueta_ubigeo": "Huancavelica, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3414",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Huancavelica",
+    "numero_hijos_ubigeo": "7"
+  },
+  {
+    "buscador_ubigeo": "huanuco perú",
+    "codigo_ubigeo": "10",
+    "etiqueta_ubigeo": "Huanuco, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3518",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Huanuco",
+    "numero_hijos_ubigeo": "11"
+  },
+  {
+    "buscador_ubigeo": "ica perú",
+    "codigo_ubigeo": "11",
+    "etiqueta_ubigeo": "Ica, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3606",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Ica",
+    "numero_hijos_ubigeo": "5"
+  },
+  {
+    "buscador_ubigeo": "junin perú",
+    "codigo_ubigeo": "12",
+    "etiqueta_ubigeo": "Junin, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3655",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Junin",
+    "numero_hijos_ubigeo": "9"
+  },
+  {
+    "buscador_ubigeo": "la libertad perú",
+    "codigo_ubigeo": "13",
+    "etiqueta_ubigeo": "La Libertad, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3788",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "La Libertad",
+    "numero_hijos_ubigeo": "12"
+  },
+  {
+    "buscador_ubigeo": "lambayeque perú",
+    "codigo_ubigeo": "14",
+    "etiqueta_ubigeo": "Lambayeque, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3884",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Lambayeque",
+    "numero_hijos_ubigeo": "3"
+  },
+  {
+    "buscador_ubigeo": "lima perú",
+    "codigo_ubigeo": "15",
+    "etiqueta_ubigeo": "Lima, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "3926",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Lima",
+    "numero_hijos_ubigeo": "10"
+  },
+  {
+    "buscador_ubigeo": "loreto perú",
+    "codigo_ubigeo": "16",
+    "etiqueta_ubigeo": "Loreto, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4108",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Loreto",
+    "numero_hijos_ubigeo": "6"
+  },
+  {
+    "buscador_ubigeo": "madre de dios perú",
+    "codigo_ubigeo": "17",
+    "etiqueta_ubigeo": "Madre de Dios, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4165",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Madre de Dios",
+    "numero_hijos_ubigeo": "3"
+  },
+  {
+    "buscador_ubigeo": "moquegua perú",
+    "codigo_ubigeo": "18",
+    "etiqueta_ubigeo": "Moquegua, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4180",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Moquegua",
+    "numero_hijos_ubigeo": "3"
+  },
+  {
+    "buscador_ubigeo": "pasco perú",
+    "codigo_ubigeo": "19",
+    "etiqueta_ubigeo": "Pasco, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4204",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Pasco",
+    "numero_hijos_ubigeo": "3"
+  },
+  {
+    "buscador_ubigeo": "piura perú",
+    "codigo_ubigeo": "20",
+    "etiqueta_ubigeo": "Piura, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4236",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Piura",
+    "numero_hijos_ubigeo": "8"
+  },
+  {
+    "buscador_ubigeo": "puno perú",
+    "codigo_ubigeo": "21",
+    "etiqueta_ubigeo": "Puno, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4309",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Puno",
+    "numero_hijos_ubigeo": "13"
+  },
+  {
+    "buscador_ubigeo": "san martin perú",
+    "codigo_ubigeo": "22",
+    "etiqueta_ubigeo": "San Martin, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4431",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "San Martin",
+    "numero_hijos_ubigeo": "10"
+  },
+  {
+    "buscador_ubigeo": "tacna perú",
+    "codigo_ubigeo": "23",
+    "etiqueta_ubigeo": "Tacna, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4519",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Tacna",
+    "numero_hijos_ubigeo": "4"
+  },
+  {
+    "buscador_ubigeo": "tumbes perú",
+    "codigo_ubigeo": "24",
+    "etiqueta_ubigeo": "Tumbes, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4551",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Tumbes",
+    "numero_hijos_ubigeo": "3"
+  },
+  {
+    "buscador_ubigeo": "ucayali perú",
+    "codigo_ubigeo": "25",
+    "etiqueta_ubigeo": "Ucayali, Perú",
+    "id_padre_ubigeo": "2533",
+    "id_ubigeo": "4567",
+    "nivel_ubigeo": "1",
+    "nombre_ubigeo": "Ucayali",
+    "numero_hijos_ubigeo": "4"
+  }
+]

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Cobertura sin frontera</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script type="text/javascript" src="js/library/jquery.js"></script>
+    <style type="text/css">
+      .fade-enter-active, .fade-leave-active {
+      	transition: opacity 0.25s ease-out;
+      }
+      
+      .fade-enter, .fade-leave-to {
+      	opacity: 0;
+      }
+      
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script language="javascript">
+      function ventanaSecundaria (URL){ 
+      	window.open(URL,"ventana1","width=400,height=500,scrollbars=NO") 
+      }
+      
+      
+      
+    </script>
+  </head>
+  <body>
+    <!--aside//a(href="http://www.claro.com.pe/personas/claro-club/latam/" target="_blank")
+    -->
+    <div class="layout" id="app">
+      <div class="layout__main">
+        <div class="page1">
+          <div class="page1__header">
+            <section class="section1">
+              <div class="section1__align">
+                <div class="section1__header">
+                  <div class="item__list">
+                    <div class="item">
+                      <p>Distribuidor Autorizado Claro</p>
+                    </div>
+                    <div class="item">
+                      <h3>Llámanos al (01) 674 4475</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section2">
+              <div class="section2__align">
+                <div class="section2__header">
+                  <div class="item__list">
+                    <div class="item">
+                      <h2> Nombre de Distribuidor</h2>
+                    </div>
+                    <div class="menu" id="burger">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="item">
+                      <ul>
+                        <li> <a href="#">Promociones</a></li>
+                        <li> <a class="active" href="#" target="_blank">Cámbiate o renueva</a></li>
+                        <!--li 
+                        a(href="#" target="_blank") Hogar 
+                        
+                        
+                        -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="menu-bar" id="menu_item">
+              <ul>
+                <li> <a class="active" href="#">Promociones</a></li>
+                <li> <a href="#" target="_blank">Cámbiate o renueva</a></li>
+                <!--li 
+                a(href="#" target="_blank") Hogar 
+                
+                
+                
+                
+                -->
+              </ul>
+            </div>
+          </div>
+          <form class="page1__main" @submit.prevent="validate('form_concurse1')" data-vv-scope="form_concurse1">
+            <section class="section9">
+              <div class="section9__align">
+                <div class="section9__header">
+                  <div class="breadcrum">
+                    <ul>
+                      <li class="active">Catálogo de equipo</li>
+                      <li>/ Iphone 8 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section8">
+              <div class="section8__align">
+                <div class="section8__header">
+                  <div class="tabs">
+                    <ul>
+                      <li class="active">Equipo</li>
+                      <li>Detalles</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section5">
+              <div class="section5__align">
+                <!--.section5__header
+                .title
+                	h2 Catálogo de equipos
+                -->
+                <div class="section5__main">
+                  <div class="item__imagen">
+                    <div class="item__title">
+                      <h3>Samsung<b>Galaxy S20</b></h3>
+                    </div><img src="assets/phone.png"/>
+                    <div class="subimagen"><img src="assets/phone.png"/><img src="assets/phone2.png"/><img src="assets/phone2.png"/></div>
+                  </div>
+                  <div class="item__list">
+                    <div class="item">
+                      <div class="item__title">
+                        <!--span 1-->
+                        <h3>Samsung<b>Galaxy S20</b></h3>
+                      </div>
+                      <div class="item__price">
+                        <div class="type-descript"><span>Precio de equipo</span>
+                          <h4>  125 </h4><small>Precio al contado S/ 3450</small>
+                          <p>Con acuerdo de equipos a 18 meses y acuerdo de venta en cuotas. En plan Postpago Max Internacional 119.90.</p>
+                        </div>
+                        <div class="type-select">
+                          <dt>
+                            <label>MODALIDAD</label>
+                            <select name="productointeres">
+                              <option value="movil-renovacion" selected="selected">RENOVACIÓN</option>
+                              <option value="movil-renovacion">RENOVACIÓN</option>
+                            </select>
+                          </dt>
+                          <dt class="l">
+                            <label>Número de cuotas</label>
+                            <select class="form__select1" name="productointeres">
+                              <option value="movil-renovacion" selected="selected">18 CUOTAS</option>
+                              <option value="movil-renovacion">18 CUOTAS</option>
+                            </select>
+                          </dt>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--.section5__footer
+                .info
+                	p 
+                		a(href="#" target="_blank") Ver más
+                
+                
+                -->
+              </div>
+            </section>
+            <section class="section6">
+              <div class="section6__align">
+                <div class="section6__header">
+                  <div class="title">
+                    <h2>Selecciona un plan</h2>
+                  </div>
+                </div>
+                <div class="section6__main">
+                  <div class="item__list" id="list6">
+                    <div class="item">
+                      <div class="item__title">
+                        <!--span 2 Play-->
+                        <h3>Max Internacional 119</h3>
+                      </div>
+                      <div class="item__price"><span>Precio del plan</span>
+                        <h4>S/ 119.90 al mes</h4>
+                      </div>
+                      <div class="item__info">
+                        <ul>
+                          <li>Ilimitados<small>Minutos</small></li>
+                          <li>Ilimitada<small>RPC</small></li>
+                          <li>20 GB<small>Internet</small></li>
+                          <li>Ilimitados<small>SMS</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__title">
+                        <!--span 2 Play-->
+                        <h3>Max Internacional 119</h3>
+                      </div>
+                      <div class="item__price"><span>Precio del plan</span>
+                        <h4>S/ 119.90 al mes</h4>
+                      </div>
+                      <div class="item__info">
+                        <ul>
+                          <li>Ilimitados<small>Minutos</small></li>
+                          <li>Ilimitada<small>RPC</small></li>
+                          <li>20 GB<small>Internet</small></li>
+                          <li>Ilimitados<small>SMS</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__title">
+                        <!--span 2 Play-->
+                        <h3>Max Internacional 119</h3>
+                      </div>
+                      <div class="item__price"><span>Precio del plan</span>
+                        <h4>S/ 119.90 al mes</h4>
+                      </div>
+                      <div class="item__info">
+                        <ul>
+                          <li>Ilimitados<small>Minutos</small></li>
+                          <li>Ilimitada<small>RPC</small></li>
+                          <li>20 GB<small>Internet</small></li>
+                          <li>Ilimitados<small>SMS</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item__title">
+                        <!--span 2 Play-->
+                        <h3>Max Internacional 119</h3>
+                      </div>
+                      <div class="item__price"><span>Precio del plan</span>
+                        <h4>S/ 119.90 al mes</h4>
+                      </div>
+                      <div class="item__info">
+                        <ul>
+                          <li>Ilimitados<small>Minutos</small></li>
+                          <li>Ilimitada<small>RPC</small></li>
+                          <li>20 GB<small>Internet</small></li>
+                          <li>Ilimitados<small>SMS</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--.section6__footer
+                .info
+                	p 
+                		a(href="#" target="_blank") Ver más
+                
+                
+                
+                -->
+              </div>
+            </section>
+            <section class="section7">
+              <div class="section7__align">
+                <div class="section7__header">
+                  <div class="title">
+                    <h2>¡Estás a un paso de conseguir tu nuevo equipo!</h2><span>Déjanos tus datos y te llamaremos</span>
+                  </div>
+                </div>
+                <div class="section7__main">
+                  <div class="item__list">
+                    <div class="form">
+                      <dl class="type1">
+                        <dt>
+                          <!--label.form__label1 Nombres y Apellidos-->
+                          <input class="form__text1" type="text" name="nombres" v-model="register1.nombres" v-validate="'required|string|min:3'" placeholder="Nombre y Apellido"/>
+                        </dt>
+                        <dd><span class="form__error" v-show="errors.has('form_concurse1.nombres')">* {{ errors.first('form_concurse1.nombres') }}</span></dd>
+                      </dl>
+                      <dl class="type1">
+                        <dt>
+                          <!--label.form__label1 Número de celular-->
+                          <input class="form__text1" type="text" name="telefono" v-model="register1.telefono" v-validate="'required|numeric|min:9|max:9'" placeholder="Número de celular"/>
+                        </dt>
+                        <dd><span class="form__error" v-show="errors.has('form_concurse1.telefono')">* {{ errors.first('form_concurse1.telefono') }}</span></dd>
+                      </dl>
+                      <dl class="row3"> 
+                        <dt> 
+                          <div class="form__checkbox1"> 
+                            <input type="checkbox" name="datospersonales" v-model="register1.datospersonales" v-validate="'required'" id="Datos"/>
+                            <label for="Datos"> </label><small>
+                               Autorizo<a @click="showModal('active2')">el tratamiento de mis datos personales </a></small><span class="form__error" v-show="errors.has('form_concurse1.datospersonales')">* {{ errors.first('form_concurse1.datospersonales') }}</span>
+                          </div>
+                        </dt>
+                      </dl>
+                      <dl>
+                        <dt>
+                          <div class="form__buttons">
+                            <button class="button1" onclick="event.preventDefault()" type="submit" :disabled="errors.any() || !isCompleted1" :class="{ inactive: errors.any() || !isCompleted1 }">Enviar</button>
+                          </div>
+                        </dt>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </form>
+          <div class="page1__footer">
+            <section class="section1">
+              <div class="section1__align">
+                <div class="section1__header">
+                  <div class="item__list">
+                    <div class="item">
+                      <ul>
+                        <li> <a href="#" target="_blank"> <img src="assets/fb.svg"/></a></li>
+                        <li> <a href="#" target="_blank"> <img src="assets/wsp.svg"/></a></li>
+                      </ul>
+                      <p>Av Ramon Vargas Machuca 300 <br/>San Juan de Miraflores</p>
+                    </div>
+                    <div class="item">
+                      <h2>(01) 674 4475</h2>
+                      <h3>distribuidor@ejemplo.pe</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="section1__main">
+                  <div class="item__list">
+                    <div class="item">
+                      <p> Nombre de distribuidor (C) Distribuidor Oficial Claro</p>
+                    </div>
+                    <div class="item"> 
+                      <ul>
+                        <li><a href="#" target="_blank">Términos y condiciones </a></li>
+                        <li> <a href="#" target="_blank">Política de privacidad </a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <transition name="fade">
+        <div class="layout__modal" v-if="modal.show" v-bind:class="{active: modal.show}">
+          <div class="overlay">
+            <div class="box">
+              <div class="box__inset">
+                <div class="page2" v-if="modal.page2">
+                  <div class="page1__close" @click="closeModal()">Cerrar</div>
+                  <section class="section1">
+                    <div class="section1__header">
+                      <div class="info"> 
+                        <h3>Tratamiento de datos personales</h3>
+                      </div>
+                    </div>
+                    <div class="section1__main">
+                      <div class="content">
+                        <p>Otorga su consentimiento a <b>Nombre del DAC </b>   con domicilio en<b> Dirección del domicilio del DAC, </b>  para utilizar los datos personales que ha registrado, con la finalidad de recibir información sobre productos y/o servicios que ha solicitado mediante este formulario. Es oportuno mencionarle que sus datos personales serán registrados en nuestro Banco de Datos que ha sido declarado a la Autoridad Nacional de Protección de Datos Personales.</p>
+                        <p>Autoridad Nacional de Protección de Datos Personales. Usted podrá revocar su consentimiento y/o ejercer los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición); en <b>   Indicar el punto de atención que el DAC ha designados para tal efecto. Nombre del DAC</b>    garantiza por su parte, el respeto y observancia al ejercicio de dichos derechos. Para mayor información revisa nuestra <b>Política de Seguridad del DAC (insertar enlace)</b></p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </div>
+    <script type="text/javascript" src="js/library/vue.js"></script>
+    <script type="text/javascript" src="js/library/slick.js"> </script>
+    <script type="text/javascript" src="js/library/lodash.js"> </script>
+    <script type="text/javascript" src="js/library/vee-validate.min.js"> </script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">main.init("page1");</script>
+  </body>
+</html>

@@ -1,0 +1,2500 @@
+.ID-1 .container{
+  width: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body{
+	overflow: visible;
+	&.active{
+		overflow: hidden;
+	}
+}
+.layout{
+	&__main{
+		.page1{
+			&__header{
+				width: 100%;
+				height: 100%;
+				
+				.section1{
+					width: 	100%;
+					background: #000000;
+					&__align{
+						width: 1100px;
+						margin: 0 auto;
+						@include to(tablet-h) {
+							width: 100%;
+							padding: 0 40px;
+						}
+						@include to(movil-h) {
+							width: 100%;
+							padding: 0 20px;
+						}
+						
+					}
+
+					&__header{
+						position: relative;
+						width: 	100%;
+						padding: 	14px 0;
+						.item__list{
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							@include align-items(center);
+							.item{
+								@include to(tablet) {
+									width: 100%;
+									&:last-child{
+										display: none;
+									}
+								}
+								p{
+									font: normal 400 em(15) $font1;
+									color: 	#ffffff;
+									padding-left: 30px;
+									position: relative;
+									@include to(movil-h) {
+										font: normal 400 em(14) $font1;
+									}
+									&:before{
+										content: '';
+										width: 	20px;
+										height: 20px;
+										position: absolute;
+										left: 	0;
+										top: 	0;
+										background: url("#{$path}/simbolo-claro.svg") no-repeat center center;
+										background-size: 100%;
+									}
+
+								}
+								h3{
+									font: normal 700 em(17) $font1;
+									color: 	#ffffff;
+								}	
+							}
+
+						}
+					}
+
+				}
+				.section2{
+					width: 	100%;
+					background: #da272c;
+					&__align{
+						width: 1100px;
+						margin: 0 auto;
+						@include to(tablet-h) {
+							width: 100%;
+							padding: 0 40px;
+						}
+						@include to(movil-h) {
+							width: 100%;
+							padding: 0 0px;
+						}
+						
+					}
+
+					&__header{
+						position: relative;
+						width: 	100%;
+						
+						.item__list{
+							@include flexbox;
+							position: relative;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							@include align-items(center);
+							@include to(movil-h) {
+							width: 100%;
+								padding: 0 20px;
+							}
+							.item{
+								@include to(tablet) {
+									// width: 100%;
+									padding: 16px 0;
+									&:last-child{
+										display: none;
+									}
+								}
+								h2{
+									font: normal 400 em(20) $font1;
+									color: 	#ffffff;
+									@include to(movil-h) {
+										font: normal 400 em(18) $font1;
+									}
+								}
+								h3{
+									font: normal 700 em(17) $font1;
+									color: 	#ffffff;
+								}
+								ul{
+									li{
+										display: 	inline-block;
+										a{
+											width: 100%;
+											padding: 15px 25px 25px;
+											display: 	inline-block;
+											color: #ffffff;
+											border-bottom: 2px solid  #da272c;
+											font: normal 300 em(18) $font1;	
+											&.active{
+												border-bottom: 2px solid  #ffffff;
+												font-weight: 500;
+											}
+										}
+									}
+								}	
+							}
+							.menu{
+								display: none;
+								@include to(tablet) {
+									display: inline-block;
+								}
+								&.active{
+									div{
+										&:first-child{
+											-webkit-transform: translate(0, 7px) rotate(42deg);
+										    -ms-transform: translate(0, 7px) rotate(42deg);
+										    transform: translate(0, 7px) rotate(42deg);
+										}
+										&:nth-child(2){
+											-webkit-transform: scale(0);
+										    -ms-transform: scale(0);
+										    transform: scale(0);
+										}
+										&:last-child{
+											-webkit-transform: translate(0, -8px) rotate(-42deg);
+										    -ms-transform: translate(0, -8px) rotate(-42deg);
+										    transform: translate(0, -8px) rotate(-42deg);
+										}
+									}
+								}
+								div{
+									width: 30px;
+									height: 3px;
+									margin-bottom: 5px;
+									-webkit-transition: ease-out 0.2s;
+								    -o-transition: ease-out 0.2s;
+								    transition: ease-out 0.2s;
+									background: #ffffff;
+									&:last-child{
+										margin-bottom: 0;
+									}
+								}
+							}
+
+						}
+					}
+
+				}	
+				.menu-bar{
+					display: none;
+					position: absolute;
+					top: 99px;
+					left: -100%;
+					height: auto;
+					background: #da262d;
+					-webkit-transition: ease-out 0.2s;
+				    -o-transition: ease-out 0.2s;
+				    transition: ease-out 0.2s;
+					z-index: 5;
+					width: 100%;
+					ul{
+						li{
+							a{
+								font: normal 400 em(17) $font1;
+								color: #ffffff;	
+								padding: 15px 40px;
+								display: inline-block;
+								@include to(movil-h) {
+									padding	: 15px 20px;
+								}
+							}
+						}
+					}
+					@include to(tablet) {
+						display: inline-block;
+					}
+					&.active{
+						left: 0px;
+					}
+
+				}
+				
+			}
+			&__main{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				.section4{
+					//background: url("#{$path}/pg1_bg_section4.jpg") no-repeat center center;
+					//background-size: cover;
+					background-color: #f9f9f9;
+					@include to(movil-h) {
+						padding-top: 0px;
+					}
+					
+					&__align{
+						width: 100%;
+						max-width: 920px;
+						margin: auto;
+						@include to(tablet-h) {
+							max-width: 	970px;
+
+						}
+
+
+						@include to(tablet) {
+							max-width: 	670px;
+						}
+
+						
+					}
+					&__header{
+						padding: 50px 0 0px;
+						.title{
+							width: 100%;
+							padding: 0 20px;
+							h2{
+								font: normal 600 em(26) $font1;
+								text-align: center;
+								@include to(tablet) {
+									font: normal 600 em(24) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 600 em(18) $font1;
+									margin-bottom: 	0px;
+								}
+							}
+						}
+					}
+					&__main{
+						padding: 57px 0 37px;
+						@include flexbox;
+						@include flex-wrap(wrap);
+						@include justify-content(space-between);
+						@include to(movil-h) {
+							padding-top: 24px;
+						}
+						.item__filter{
+							width: 180px;
+							@include to(movil-h) {
+								width: 100%;
+								max-width: 200px;
+								margin: auto;
+
+							}
+							p{
+								font: normal 700 em(16) $font1;
+								display: inline-block;
+								width: 100%;
+								margin-bottom: 12px;
+								@include to(movil-h) {
+									display: none;
+								}
+							}
+							dt{
+								display: inline-block;
+								width: 100%;
+								margin-bottom: 20px;
+								&:nth-child(4){
+									margin-bottom: 40px;
+								}
+								&.mb{
+									display: none;
+								}
+								@include to(movil-h) {
+									&.md{
+										display: none;
+									}
+									&.mb{
+										display: block;
+									}
+								}
+								
+								
+								select{
+									width: 100%;
+								    padding: 7px 3%;
+								    border: none;
+								    border-bottom: solid 1px #979797;
+								    background: none;
+								    cursor: pointer;
+								}
+							}
+							.typecheck{
+								margin-bottom: 10px;
+								position: relative;
+								@include to(movil-h) {
+									display: none;
+								}
+								label{
+									width: 14px;
+								    height: 14px;
+								    display: inline-block;
+								    font: normal 600 0.875em "Roboto";
+								    line-height: 22px;
+								    text-align: center;
+								    vertical-align: middle;
+								    color: #000000;
+								    border: 1px solid #cecece;
+								    background-color: #ffffff;
+								    cursor: pointer;
+								    -webkit-border-radius: 3px 3px 3px 3px;
+								    -moz-border-radius: 3px 3px 3px 3px;
+								    border-radius: 3px 3px 3px 3px;
+								    -webkit-transition: all 0.2s ease 0s;
+								    -moz-transition: all 0.2s ease 0s;
+								    -o-transition: all 0.2s ease 0s;
+								    -ms-transition: all 0.2s ease 0s;
+								    transition: all 0.2s ease 0s; 
+								    position: relative;
+								}
+								input{
+									position: absolute;
+									z-index: 5;
+									left: -3px;
+									opacity: 0;
+									cursor: pointer;
+									width: 14px;
+									height: 14px;
+									&:checked ~  label {
+										background: #1dbddf;
+									}
+								}
+								small{
+									font: normal 400 em(14) $font1;
+									padding-left: 5px;
+								}
+							}
+							span{
+								display: block;
+								margin-top: 30px;
+								text-align: center;
+								color: #1dbddf;
+								cursor: pointer;
+								font: normal 400 em(14) $font1;
+								@include to(movil-h) {
+									display: none;
+								}
+							}
+						}
+						.item__list{
+							width: 700px;
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							
+							 @include to(tablet) {
+							 	width: 460px;
+							 }
+
+							 @include to(movil-h) {
+				                max-width:  300px;
+				               padding-top:  20px;
+				                margin:   auto; 
+				                @include justify-content(center);
+
+
+				              }
+							
+
+							.slick-list{
+								padding-top: 26px;
+
+							}
+
+							.slick-dots{
+								//bottom: 15px;
+								// @include to(movil){
+								// 	bottom: -40px;
+								// }
+								li{
+									margin: 0;
+									button{
+										background: none;
+										border: none !important;
+										&:before{
+											color: #0fbddf;
+											font-size: 	12px;
+											background: none;
+										}
+									}
+								}
+								li.slick-active{
+									button{
+										&:before{
+											font-size: 	18px;
+										}
+									}
+								}
+							}
+
+							.item{
+								width: 220px;
+								background: #ffffff;
+								margin-bottom: 20px;
+								box-shadow: -5px 5px 18px 0 rgba(217, 217, 217, 0.5);
+								// @include to(tablet) {
+								// 	margin: 0 12px;
+								// }
+
+								height: 394px;
+								border: solid 1px #979797;
+								padding: 24px 16px 20px;
+								position: relative	;
+								@include redondeado(6px, 6px, 6px, 6px);
+								&__image{
+									width: 100%;
+									padding-bottom: 	18px;
+									border-bottom: solid 1px #979797;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(center);
+									@include align-items(center);
+									
+									// img{
+									// 	width: 85px
+									// }
+								}
+								&__title{
+									padding: 11px   20px 0px;
+									margin-bottom: 	25px;
+									width: 100%;
+									h3{
+										font: normal 400 em(13) $font1;
+										color: 	#68707b;
+										text-align: left;	
+										b{
+											display: 	block;	
+											font: normal 700 em(19) $font1;
+										}
+										
+										
+									}
+								}
+								&__plan{
+									padding: 0px   0px 0px;
+									margin-bottom: 	0px;
+									width: 100%;
+									h4{
+										font: normal 400 em(16) $font1;
+										color: 	#68707b;
+										text-align: center;	
+										
+										
+										
+									}
+								}
+								&__price{
+									padding: 0   20px;
+									margin-bottom: 	15px;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(space-between);
+									width: 100%;
+									
+									h4{
+										font: normal 400 em(25) $font1;
+										color: 	#ee2124;
+										position: relative	;
+										text-align: 	center;	
+										&:before{
+											content: 'Desde';
+											font: normal 400 em(7) $font1;
+											
+											color: 	#ee2124;
+											
+											position: absolute;
+											left: 	0;
+											top: 	-10px;
+										}
+										&:after{
+											content: 'x 18 meses';
+											font: normal 400 em(8) $font1;
+											color: 	#000000;
+											position: absolute;
+											right: -96%;
+											bottom: 4px;
+										}
+									}
+									span{
+
+									}
+								}
+							}
+
+							.pagination{
+								width: 100%;
+								ul{
+									width: 100%;
+									margin-top: 20px;
+									text-align: center;
+									@include to(movil-h) {
+						                display: none;
+						            }
+									li{
+										display: inline-block;;
+										padding: 0 10px;
+										text-align: center;
+										cursor: pointer;
+										font: normal 400 em(17) $font1;
+										color: #4a4a4a;
+										&.active{
+											font-weight: 700;
+										}
+									}
+								}
+								span{
+									display: none;
+									padding-top: 20px;
+									text-align: center;
+									cursor: pointer;
+									color: #1dbddf;
+									font: normal 400 em(14) $font1;
+									@include to(movil-h) {
+										display: block;
+						             }
+								}
+							}
+						}
+
+					}
+
+				}
+				.section5{
+					background-color: #f4f4f4;
+					@include to(movil-h) {
+						padding-top: 0px;
+					}
+					
+					&__align{
+						width: 100%;
+						max-width: 600px;
+						margin: auto;
+						// @include to(tablet-h) {
+						// 	max-width: 	970px;
+
+						// }
+
+
+						// @include to(tablet) {
+						// 	max-width: 	670px;
+						// }
+
+						
+					}
+					&__header{
+						padding: 50px 0 0px;
+						.title{
+							width: 100%;
+							padding: 0 20px;
+							h2{
+								font: normal 600 em(26) $font1;
+								text-align: center;
+								@include to(tablet) {
+									font: normal 600 em(24) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 600 em(18) $font1;
+									margin-bottom: 	0px;
+								}
+							}
+						}
+					}
+					&__main{
+						padding: 57px 0 37px;
+						@include flexbox;
+						@include flex-wrap(wrap);
+						@include justify-content(space-between);
+						@include to(movil-h) {
+							padding-top: 24px;
+						}
+						.item__imagen{
+							width: 270px;
+							text-align: center;
+
+							.item__title{
+								padding: 10px   20px 20px;
+								margin-bottom: 	0px;
+								width: 100%;
+								display: 	none;
+								@include to(movil-h) {
+									display: 	block;
+								}
+								h3{
+									font: normal 400 em(15) $font1;
+									color: 	#333333;
+									text-align: center	;	
+									b{
+										display: 	block;	
+										font: normal 700 em(22) $font1;
+									}
+									
+									
+								}
+								
+							}
+							img{
+								width: 130px;
+								display: inline-block;
+							}
+							@include to(movil-h) {
+								width: 100%;
+								max-width: 290px;
+								margin: auto;
+
+							}
+							.subimagen{
+								margin-top: 50px;
+								@include to(movil-h) {
+									display: 	none;
+
+								}
+								@include flexbox;
+								@include flex-wrap(wrap);
+								@include justify-content(space-around);
+								img{
+									width: 36px;
+								}
+							}
+						}
+						.item__list{
+							width: 300px;
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							
+							 // @include to(tablet) {
+							 // 	width: 460px;
+							 // }
+
+							 @include to(movil-h) {
+				                max-width:  300px;
+				               padding-top:  20px;
+				                margin:   auto; 
+				                @include justify-content(center);
+
+
+				              }
+							
+
+							.slick-list{
+								padding-top: 26px;
+
+							}
+
+							.slick-dots{
+								//bottom: 15px;
+								// @include to(movil){
+								// 	bottom: -40px;
+								// }
+								li{
+									margin: 0;
+									button{
+										background: none;
+										border: none !important;
+										&:before{
+											color: #0fbddf;
+											font-size: 	12px;
+											background: none;
+										}
+									}
+								}
+								li.slick-active{
+									button{
+										&:before{
+											font-size: 	18px;
+										}
+									}
+								}
+							}
+
+							.item{
+								width: 100%;
+								background: #ffffff;
+								
+								box-shadow: -5px 5px 18px 0 rgba(217, 217, 217, 0.5);
+								// @include to(tablet) {
+								// 	margin: 0 12px;
+								// }
+
+								// height: 361px;
+								// border: solid 1px #979797;
+								padding: 25px 20px 25px;
+								position: relative	;
+								@include redondeado(6px, 6px, 6px, 6px);
+								@include flexbox;
+								@include flex-wrap(wrap);
+								@include justify-content(center);
+								.type-descript{
+									width: 	100%;
+										@include to(movil-h) {
+										order: 	2;
+									}
+								}
+								.type-select{
+									width: 	100%;
+										@include to(movil-h) {
+										order: 	1;
+										margin-bottom: 	15px;
+									}
+								}
+								&__image{
+									width: 100%;
+									padding-bottom: 	18px;
+									border-bottom: solid 1px #979797;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(center);
+									@include align-items(center);
+									
+									// img{
+									// 	width: 85px
+									// }
+								}
+								&__title{
+									padding: 0px   20px 0px;
+									margin-bottom: 	0px;
+									width: 100%;
+									@include to(movil-h) {
+										display: 	none;
+									}
+									h3{
+										font: normal 400 em(21) $font1;
+										color: 	#333333;
+										text-align: left;	
+										b{
+											display: 	block;	
+											font: normal 700 em(30) $font1;
+										}
+										
+										
+									}
+									
+								}
+								&__price{
+									padding: 0   20px;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(space-between);
+									width: 100%;
+									@include to(movil-h) {
+										padding: 0   30px;
+									}
+									span{
+										font: normal 700 em(13) $font1;
+										display: block;
+										padding-top: 5px;
+										color: 	#333333;
+										text-align: left;	
+										
+										
+										
+									}
+									h4{
+										padding-left: 25px;
+
+										font: normal 700 em(61) $font1;
+										color: 	#ee2124;
+										position: relative	;
+										text-align: left;	
+										&:before{
+											content: 'S/ ';
+											font: normal 700 em(6) $font1;
+											color: 	#ee2124;
+											position: absolute;
+											left: 	0;
+											top: 	9px;
+										}
+										&:after{
+											content: 'al mes';
+											font: normal 400 em(5) $font1;
+											color: 	#ee2124;
+											position: absolute;
+											width: 100px;
+											padding-left: 4px;
+											text-align: left;
+											bottom: 9px;
+										}
+									}
+									small{
+										font: normal 400 em(13) $font1;
+										color: 	#68707b;
+									}
+
+									p{
+										font: normal 400 em(12) $font1;
+										color: 	#68707b;
+										display: block;
+										padding-top: 15px;
+										padding-bottom: 15px;
+										@include to(movil-h) {
+											padding-bottom: 0px;
+										}
+									}
+									label{
+										font: normal 400 em(11) $font1;
+										text-transform: uppercase;
+									}
+									dt{
+										display: inline-block;
+										width: 100%;
+										margin-bottom: 15px;
+										&.l{
+											margin-bottom: 0;
+										}
+										@include to(movil-h) {
+											&.md{
+												display: none;
+											}
+											&.mb{
+												display: block;
+											}
+										}
+										
+										
+										select{
+											width: 100%;
+											font: normal 400 em(17) $font1;
+										    padding: 7px 3%;
+										    border: none;
+										    border-bottom: solid 1px #979797;
+										    background: none;
+										    cursor: pointer;
+										}
+									}
+
+								}
+							}
+
+							.pagination{
+								width: 100%;
+								ul{
+									width: 100%;
+									margin-top: 20px;
+									text-align: center;
+									@include to(movil-h) {
+						                display: none;
+						            }
+									li{
+										display: inline-block;;
+										padding: 0 10px;
+										text-align: center;
+										cursor: pointer;
+										font: normal 400 em(17) $font1;
+										color: #4a4a4a;
+										&.active{
+											font-weight: 700;
+										}
+									}
+								}
+								span{
+									display: none;
+									padding-top: 20px;
+									text-align: center;
+									cursor: pointer;
+									color: #1dbddf;
+									font: normal 400 em(14) $font1;
+									@include to(movil-h) {
+										display: block;
+						             }
+								}
+							}
+						}
+
+					}
+					&__footer{
+						padding: 0px 0 50px;
+						.info{
+							width: 100%;
+							padding: 0 20px;
+							p{
+								font: normal 400 em(22) $font1;
+								@include to(tablet) {
+									font: normal 400 em(16) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 400 em(14) $font1;
+									br{
+										display: none;
+									}
+								}
+								text-align: center;
+								a{
+									color: #1dbddf;
+									text-decoration: underline;	
+								}
+							}
+						}
+					}
+
+				}
+
+				.section6{
+					//background: url("#{$path}/pg1_bg_section4.jpg") no-repeat center center;
+					//background-size: cover;
+					background-color: #ffffff;
+					&__align{
+						width: 100%;
+						max-width: 940px;
+						margin: auto;
+						
+						@include to(tablet) {
+							max-width: 	630px;
+						}
+
+						
+					}
+					&__header{
+						padding: 50px 0 0px;
+						.title{
+							width: 100%;
+							padding: 0 20px;
+							h2{
+								font: normal 600 em(26) $font1;
+								text-align: center;
+								@include to(tablet) {
+									font: normal 600 em(24) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 600 em(18) $font1;
+									margin-bottom: 	0px;
+								}
+							}
+						}
+					}
+					&__main{
+						padding: 30px 0 70px;
+						@include to(movil-h) {
+							padding-top: 10px;
+							padding-bottom: 	50px;
+						}
+						.item__list{
+							width: 100%;
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							
+
+							 @include to(movil-h) {
+				                max-width:  300px;
+				                margin:   auto; 
+
+
+				              }
+							
+
+							.slick-prev{
+								left: 	-45px;
+								background: url("#{$path}/flecha1.png") no-repeat center center;
+								background-size: 100%;
+								@include to(movil-h) {
+									display: 	none  !important;	
+								}
+								&:before{
+									display: 	none;	
+								}
+							} 
+							.slick-next{
+								right: 	-40px;
+								background: url("#{$path}/flecha2.png") no-repeat center center;
+								background-size: 100%;
+								@include to(movil-h) {
+									display: 	none !important;	
+								}
+								&:before {
+									display: 	none ;	
+
+								}
+							}
+							
+							.item{
+								width: 300px;
+								margin: 0 10px;
+								background: #ffffff;
+								position: relative;
+								overflow: 	hidden;	
+								height: 	303px;
+								&.slick-current{
+									border: solid 1px #da272c;
+								}
+								//box-shadow: -5px 5px 18px 0 rgba(217, 217, 217, 0.5);
+								// @include to(tablet-h) {
+								// 	width: 	280px !important;
+								// }
+								@include to(tablet) {
+									margin:  0 12px;
+								}
+
+								@include to(movil-h) {
+									width: 	250px !important;
+								}
+
+								// height: 395px;
+								border: solid 1px #979797;
+								//padding: 24px 0px 20px;
+								position: relative	;
+								@include redondeado(8px, 8px, 8px, 8px);
+								&__image{
+									width: 100%;
+									padding-bottom: 	18px;
+									//border-bottom: solid 1px #979797;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(center);
+									@include align-items(center);
+									
+									// img{
+									// 	width: 85px
+									// }
+								}
+								&__title{
+									text-align: 	center;	
+									background: #da272c;
+									padding: 20px 24px;
+									width: 100%;
+									span{
+										display: block;	
+										text-align: 	left;
+										color: 	#ffffff;
+										font: normal 400 em(14) $font1;	
+									}
+									h3{
+										font: normal 400 em(20) $font1;
+										color: 	#ffffff;
+										text-align: center	;	
+									}
+								}
+								&__info{
+									text-align: left;	
+									background: #ffffff;
+									padding: 30px 20px 0px;
+									@include to(movil-h) {
+										padding: 30px 30px 30px;
+									}
+									width: 100%;
+									ul{
+										@include flexbox;
+										@include flex-wrap(wrap);
+										@include justify-content(space-around);
+										
+										li{
+											position: relative	;
+											width: 	45%;
+											margin-bottom: 	30px;
+											display: 	inline-block;	
+											text-align: 	center;	
+											font: normal 700 em(15) $font1;	
+											
+											small{
+												text-align: 	center;	
+												display: 	block;	
+												font: normal 400 em(12) $font1;	
+											}
+										}
+									}
+								}
+								&__price{
+									width: 	80%;
+									margin: 	auto;	
+									padding	: 15px 15px;
+									
+									border-bottom: 1px solid #979797;
+									//@include flex-wrap(wrap);
+									//@include justify-content(space-between);
+									//@include align-items(center);
+									span{
+										font: normal 400 em(14) $font1;
+										color: 	#000000;
+										text-align:center;	
+										display: 	block;	
+									}
+									h4{
+										padding-top: 8px;
+										font: normal 700 em(22) $font1;
+										color: #da272c;
+										position: relative;
+										text-align: center;
+	
+									}
+								}
+								&__link{
+									width: 	100%;
+									padding: 0 20px;	
+									
+									small{
+										font: normal 400 em(10) $font1;
+										color: 	#4a4a4a;
+										display: block;	
+										text-align: center;	
+										margin-bottom: 	6px;
+									}
+									span{
+										width: 100%;
+										display: 	inline-block;	
+										height: 37px;
+										background: #1dbddf	;
+										@include redondeado(4px, 4px, 4px, 4px);
+										a{
+											font: normal 400 em(12) $font1;
+											display: 	block;
+											line-height: 	37px;
+											text-align: 	center;	
+											color: 	#ffffff	;
+
+										}
+									}
+									a{
+										font: normal 400 em(12) $font1;
+										display: 	block;
+										line-height: 	37px;
+										text-align: 	center;	
+										color: #1dbddf	;
+
+									}
+								}
+								
+							}
+						}
+
+					}
+					&__footer{
+						padding: 0px 0 50px;
+						.info{
+							width: 100%;
+							padding: 0 20px;
+							p{
+								font: normal 400 em(22) $font1;
+								@include to(tablet) {
+									font: normal 400 em(16) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 400 em(14) $font1;
+									br{
+										display: none;
+									}
+								}
+								text-align: center;
+								a{
+									color: #1dbddf;
+									text-decoration: underline;	
+								}
+							}
+						}
+					}
+				}
+
+				.section7{
+					//background: url("#{$path}/pg1_bg_section4.jpg") no-repeat center center;
+					//background-size: cover;
+					background-color: #f4f4f4;
+					&__align{
+						width: 100%;
+						max-width: 940px;
+						margin: auto;
+						
+						@include to(tablet) {
+							max-width: 	648px;
+						}
+
+						
+					}
+					&__header{
+						padding: 50px 0 0px;
+						.title{
+							width: 100%;
+							padding: 0 20px;
+							h2{
+								font: normal 600 em(26) $font1;
+								text-align: center;
+								margin-bottom: 	15px;
+								@include to(tablet) {
+									font: normal 600 em(24) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 600 em(18) $font1;
+									padding	: 0 30px;
+								}
+							}
+							span{
+								font: normal 400 em(21) $font1;
+								text-align: center;
+								display: block;	
+								@include to(tablet) {
+									font: normal 400 em(19) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 400 em(14) $font1;
+									margin-bottom: 	20px;
+								}
+							}
+						}
+					}
+					&__main{
+						padding: 40px 0 50px;
+						@include to(movil-h) {
+							padding-top: 10px;
+						}
+						.item__list{
+							width: 350px;
+							margin: auto;	
+							
+							
+
+							 @include to(movil-h) {
+				                max-width:  300px;
+				                margin:   auto; 
+
+
+				              }
+							
+
+							.slick-prev{
+								left: 	-45px;
+								background: url("#{$path}/flecha1.png") no-repeat center center;
+								background-size: 100%;
+								&:before{
+									display: 	none;	
+								}
+							} 
+							.slick-next{
+								right: 	-40px;
+								background: url("#{$path}/flecha2.png") no-repeat center center;
+								background-size: 100%;	
+								&:before {
+									display: 	none;	
+
+								}
+							}
+							
+							.item{
+								width: 300px;
+								margin: 0 10px;
+								background: #ffffff;
+								position: relative;
+								overflow: 	hidden;	
+								height: 	303px;
+								&.slick-current{
+									border: solid 1px #da272c;
+								}
+								//box-shadow: -5px 5px 18px 0 rgba(217, 217, 217, 0.5);
+								@include to(tablet-h) {
+									width: 	280px !important;
+								}
+								@include to(tablet) {
+									margin:  0 12px;
+								}
+
+								@include to(movil-h) {
+									width: 	250px !important;
+								}
+
+								// height: 395px;
+								border: solid 1px #979797;
+								//padding: 24px 0px 20px;
+								position: relative	;
+								@include redondeado(8px, 8px, 8px, 8px);
+								&__image{
+									width: 100%;
+									padding-bottom: 	18px;
+									//border-bottom: solid 1px #979797;
+									@include flexbox;
+									@include flex-wrap(wrap);
+									@include justify-content(center);
+									@include align-items(center);
+									
+									// img{
+									// 	width: 85px
+									// }
+								}
+								&__title{
+									text-align: 	center;	
+									background: #da272c;
+									padding: 20px 24px;
+									width: 100%;
+									span{
+										display: block;	
+										text-align: 	left;
+										color: 	#ffffff;
+										font: normal 400 em(14) $font1;	
+									}
+									h3{
+										font: normal 400 em(20) $font1;
+										color: 	#ffffff;
+										text-align: center	;	
+									}
+								}
+								&__info{
+									text-align: left;	
+									background: #ffffff;
+									padding: 30px 20px 0px;
+									@include to(movil-h) {
+										padding: 30px 30px 30px;
+									}
+									width: 100%;
+									ul{
+										@include flexbox;
+										@include flex-wrap(wrap);
+										@include justify-content(space-around);
+										
+										li{
+											position: relative	;
+											width: 	45%;
+											margin-bottom: 	30px;
+											display: 	inline-block;	
+											text-align: 	center;	
+											font: normal 700 em(15) $font1;	
+											
+											small{
+												text-align: 	center;	
+												display: 	block;	
+												font: normal 400 em(12) $font1;	
+											}
+										}
+									}
+								}
+								&__price{
+									width: 	80%;
+									margin: 	auto;	
+									padding	: 15px 15px;
+									
+									border-bottom: 1px solid #979797;
+									//@include flex-wrap(wrap);
+									//@include justify-content(space-between);
+									//@include align-items(center);
+									span{
+										font: normal 400 em(14) $font1;
+										color: 	#000000;
+										text-align:center;	
+										display: 	block;	
+									}
+									h4{
+										padding-top: 8px;
+										font: normal 700 em(22) $font1;
+										color: #da272c;
+										position: relative;
+										text-align: center;
+	
+									}
+								}
+								&__link{
+									width: 	100%;
+									padding: 0 20px;	
+									
+									small{
+										font: normal 400 em(10) $font1;
+										color: 	#4a4a4a;
+										display: block;	
+										text-align: center;	
+										margin-bottom: 	6px;
+									}
+									span{
+										width: 100%;
+										display: 	inline-block;	
+										height: 37px;
+										background: #1dbddf	;
+										@include redondeado(4px, 4px, 4px, 4px);
+										a{
+											font: normal 400 em(12) $font1;
+											display: 	block;
+											line-height: 	37px;
+											text-align: 	center;	
+											color: 	#ffffff	;
+
+										}
+									}
+									a{
+										font: normal 400 em(12) $font1;
+										display: 	block;
+										line-height: 	37px;
+										text-align: 	center;	
+										color: #1dbddf	;
+
+									}
+								}
+								
+							}
+							.form{
+								padding: 0px 0px 0px 0px;
+								// @include to(tablet) {
+								// 	padding: 10px 50px 20px 50px;
+								// }
+								@include to(movil) {
+									padding: 0px 0px 0px 0px;
+								}
+								&__text1{
+									font: normal 300 em(14) $font1;
+									color: #353535;
+
+									// @include to(tablet-h) {
+									// 	font-size: em(15);
+									// }
+									@include to(tablet) {
+										font-size: em(14);
+									}
+									@include to(movil) {
+										font-size: em(12);
+									}
+								}
+
+								&__label1{
+									text-transform: uppercase;
+									font: normal 400 em(8) $font1;
+									color: #000000;
+									margin:0px 0 8px 0;
+									
+									// @include to(tablet-h) {
+									// 	font-size: em(16);
+									// }
+									// @include to(tablet) {
+									// 	font-size: em(14);
+									// }
+									// @include to(movil) {
+									// 	font-size: em(12);
+									// }
+			
+
+									span{
+										font-weight: 500;
+										margin-left: 5px;
+									}
+								}
+
+								&__select1{
+									font: normal 300 em(13) $font1;
+									color: #353535;
+
+									// @include to(tablet-h) {
+									// 	font-size: em(16);
+									// }
+									// @include to(tablet) {
+									// 	font-size: em(14);
+									// }
+									@include to(movil) {
+										font-size: em(12);
+									}
+								}
+
+								&__checkbox1{
+									padding-top: 10px;
+									//margin: 5px 0;
+									// display: table;
+									// margin: 0 auto;
+
+							    input[type="checkbox"] {
+							      display: none;
+							    }
+
+							    input[type="checkbox"]:checked+label {
+							      	background-color: #c30000;
+									color: $color_t1;
+									@include transicion(all,0.2s,ease,0s);
+									&:before {
+										content: "\f058";
+								        @include icon(0px);
+								        font-size: 15px;
+								        color: $color_b1;
+								        position: relative;
+								        top: 1px;
+								        left: 0px;
+							      	}
+							    }
+
+								label {
+									width: 22px;
+									height: 22px;
+									display: inline-block;
+									font: normal 600 em(14) $font1;
+									line-height: 22px;
+									text-align: center;
+									vertical-align: middle;
+									color: $color_t2;
+									background-color: #cecece;
+									cursor: pointer;
+									@include redondeado(3px, 3px, 3px, 3px);
+									@include transicion(all,0.2s,ease,0s);
+
+							      &:hover {
+							      	background-color: #e1e4e8;
+							      	color: $color_t2;
+							      	@include transicion(all,0.2s,ease,0s);
+							      }
+							    }
+
+							    small{
+							    	font: normal 300 em(12) $font1;
+									color: #000000;
+									vertical-align: middle;
+									margin-left: 10px;
+									// @include to(movil) {
+									// 	font-size: em(13);
+									// }
+									a{
+										color: #00bddf;
+										text-decoration: underline;
+										cursor: pointer;
+										font-weight: 500;
+										margin-left: 5px;
+										&:hover{
+											text-decoration: underline;
+										}
+									}
+							    }
+							    p{
+									font: normal 600 em(12) $font1;
+									color: #ffffff;
+									position: relative;
+									text-align: left;
+									display: block;
+									margin: 0 auto;
+									padding: 0 30px;
+									margin-top: 	30px;
+									line-height: 	18px;
+
+									@include to(tablet-h) {
+										font-size: em(13);
+										padding: 0 0px;
+									}
+									@include to(movil) {
+										padding: 0 0px;
+
+									}
+								}
+									
+								}
+								
+								&__customCheckbox1{
+									margin: 5px 0;
+									display: table;
+
+									@include to (movil) {
+										margin: 20px 0 0;
+									}
+
+							    input[type="checkbox"] {
+							      display: none;
+							    }
+
+							    input[type="checkbox"]:checked+label {
+							      background-color: #00bddf;
+										color: $color_t1;
+										@include transicion(all,0.2s,ease,0s);
+										&:before {
+											content: "\f058";
+							        @include icon(0px);
+							        font-size: 15px;
+							        color: $color_b1;
+							        position: relative;
+							        top: 1px;
+							        left: 0px;
+							      }
+							    }
+
+									label {
+										width: 22px;
+										height: 22px;
+										display: inline-block;
+										font: normal 600 em(14) $font1;
+										line-height: 22px;
+										text-align: center;
+										vertical-align: middle;
+										color: $color_t2;
+										//background-color: #bbb;
+										border:solid 1px #008fa5;
+										cursor: pointer;
+										@include redondeado(3px, 3px, 3px, 3px);
+										@include transicion(all,0.2s,ease,0s);
+
+							      &:hover {
+							      	background-color: #e1e4e8;
+							      	color: $color_t2;
+							      	@include transicion(all,0.2s,ease,0s);
+							      }
+							    }
+
+							    div{
+							    	
+										vertical-align: middle;
+										padding-left: 10px;
+										display: table-cell;
+										//line-height: 22px;
+										@include to(movil) {
+											font-size: em(12);
+										}
+										p{
+											font: normal 300 em(17) $font1;
+											color: #666666;
+											display: inline-block;
+											a{
+												color: $color_t2;
+												text-decoration: underline;
+												cursor: pointer;
+												font-weight: 500;
+												margin-left: 5px;
+												&:hover{
+													color: $color_t2;
+												}
+											}
+										}
+										
+										.tooltip.active{
+											span{
+												display: block;
+												/*@include from(movil) {
+													width: 300px;
+													margin-left: -150px;
+												}*/
+											}
+										}
+
+										.tooltip{
+											display: inline-block;
+											vertical-align: middle;
+											position: relative;
+											cursor: pointer;
+											z-index: 1;
+											//opacity: 1 !important;
+											//font-size: inherit !important;
+
+											@include to(movil) {
+												display: block;
+												/*display: table;
+												margin-top: 10px;
+												margin-left: 60px;
+												margin: 10px auto 10px;
+												//display: block;
+												left: -8%;*/
+											}
+											
+											&:before{
+												content: '';
+												width: 14px;
+												height: 14px;
+												background: url("#{$path}/pg1_ico_info.svg") no-repeat center top;
+												display: inline-block;
+												//vertical-align: text-top;
+											}
+										
+											@include from(movil) {
+												&:hover{
+													span{
+														display: block;
+													}
+												}
+											}
+
+											span{
+												font: normal 400 em(12) $font1;
+												color: $color_t2;
+												width: 600px;
+												padding: 10px 15px;
+												border: solid 1px #d0021b;
+												background-color: #fff;
+												position: absolute;
+												top: 28px;
+												left: 50%;
+												margin-left: -300px;
+												display: none;
+												text-align: center;
+												@include redondeado(5px, 5px, 5px, 5px);
+
+												@include to(movil) {
+													// //width: calc(100vw - 40px);
+													// margin-left: -62%;
+													// width: 280px;
+												}
+
+												/*@include to(movil) {
+													width: 280px;
+													margin-left: -100px;
+												}
+												@include to(325px) {
+													width: 230px;
+													margin-left: -102px;
+												}*/
+
+												&:before{
+													content: '';
+												  width: 0; 
+												  height: 0; 
+												  border-left: 10px solid transparent;
+												  border-right: 10px solid transparent;
+												  border-bottom: 10px solid #d0021b;
+												  position: absolute;
+												  left: 50%;
+												  top: -10px;
+												  margin-left: -10px;
+
+												  @include to (movil) {
+												  	left: 38px;
+												  }
+												}
+											}
+										}
+							    }
+									
+								}
+
+								&__buttons{
+									width: 100%;
+									padding: 15px 0px 0px 0;
+									@include to (movil) {
+										padding-top: 20px;
+									}
+									.button1{
+										margin: auto;
+										@include to (movil) {
+											margin: 	auto;
+										}
+										font: normal 300 em(16) $font1;
+							      		color: $color_t1;
+							      		text-align: center;
+							      		background-color: #00bddf;
+							      		//padding: 15px 50px 15px 50px;
+										//border: 1px solid #ffffff;
+										border: none;
+										display: table;
+										width: 	140px;
+										height: 	33px;
+										@include redondeado(5px, 5px, 5px, 5px);
+										line-height: 	33px;
+										text-align: 	center;	
+										// margin: 0 auto;
+										position: relative;
+							      		//@include redondeado(4px, 4px, 4px, 4px);
+										@include transicion(all,0.2s,ease,0s);
+										//@include sombra(0px,0px, 1px);
+
+										position: relative;
+
+										&.inactive{
+											background-color: #cccccc;
+										}
+										
+										
+
+										@include to(movil) {
+											//width: 100%;
+											font: normal 300 em(16) $font1;
+										}
+
+										// &:before {
+										// 	content: "";
+										//     display: inline-block;
+										//     margin-right: 0px;
+										//     font: normal normal normal 14px/1 FontAwesome;
+										//     font-size: inherit;
+										//     text-rendering: auto;
+										//     -webkit-font-smoothing: antialiased;
+										//     -moz-osx-font-smoothing: grayscale;
+										//     -webkit-transform: translate(0, 0);
+										//     -ms-transform: translate(0, 0);
+										//     transform: translate(0, 0);
+										//     font-size: 22px;
+										//     color: #ffffff;
+										//     position: absolute;
+										//     top: 15px;
+										//     right: 30px;
+									 //    }
+									}
+								}
+
+								&__error{
+									font: normal 400 em(10) $font1;
+									color: #ee2124;
+									//margin-top: 4px;
+	    							display: inline-block;
+								}
+
+
+								@include flexbox;
+								@include flex-wrap(wrap);
+								@include justify-content(space-between);
+								
+
+								dl{
+									width: 100%;
+									margin:0px 0 0px 0;
+
+									&.type1{
+										//height: 88px;
+										height: 	60px;
+										// @include to(movil) {
+										// 	height: 	auto;
+										// }
+									}
+
+									&.row1{
+										width: 48%;
+										@include to(movil) {
+											width: 100%;
+										}
+									}
+
+									&.row2{
+										width: 100%;
+										height: auto;
+										dt{
+											div{
+												width: 49.5%;
+												@include to(movil) {
+													width: 100%;
+												}
+											}
+
+										}
+										dd{
+											padding: 10px 0 30px;
+											span{
+												font: normal 200 em(15) $font1;
+												color: $color_t1;
+											}
+										}
+											
+										@include to(movil) {
+											width: 100%;
+										}
+									}
+
+									&.row3{
+										width: 100%;
+										height: 	50px;
+										@include to(movil) {
+											padding:0px 0px 0px;
+										}
+									}
+
+									//height: 82px;
+									dt{
+										input[type="text"]{
+											width:100%;
+											@include redondeado(20px, 20px, 20px, 20px);
+											padding:5px 3% 2px;
+											border: none;
+											background: #ffffff	;
+											height: 37px;
+											line-height: 37px;
+											border: none;
+											@include to (movil) {
+												width: 100%;
+											}
+											
+										}
+										select{
+											width:100%;
+											//@include redondeado(3px, 3px, 3px, 3px);
+											//padding:10px 10px;
+											padding:7px 3%;
+											border: none;
+											border-bottom: solid 1px #979797;
+											//border-radius: 5px;
+											background: none;
+											/*height: 37px;
+											line-height: 37px;*/
+
+											@include to (movil) {
+												width: 100%;
+											}
+										}
+										
+									}
+									dd{
+										p{
+											font: normal 300 em(12) $font1;
+											color: #585858;
+											margin-top: 10px;
+										}
+									}
+								}
+								
+							}
+						}
+
+					}
+					&__footer{
+						padding: 0px 0 50px;
+						.info{
+							width: 100%;
+							padding: 0 20px;
+							p{
+								font: normal 400 em(22) $font1;
+								@include to(tablet) {
+									font: normal 400 em(16) $font1;
+								}
+								@include to(movil-h) {
+									font: normal 400 em(14) $font1;
+									br{
+										display: none;
+									}
+								}
+								text-align: center;
+								a{
+									color: #1dbddf;
+									text-decoration: underline;	
+								}
+							}
+						}
+					}
+				}
+
+				.section8{
+					//background: url("#{$path}/pg1_bg_section4.jpg") no-repeat center center;
+					//background-size: cover;
+					background-color: #ffffff;
+					&__align{
+						width: 100%;
+						max-width: 940px;
+						margin: auto;
+						
+						@include to(tablet) {
+							max-width: 	630px;
+						}
+
+						
+					}
+					&__header{
+						padding: 50px 0 50px;
+						@include to(movil-h) {
+							padding: 30px 0 0px;
+						}
+						.tabs{
+							width: 100%;
+							padding: 0 20px;
+							@include to(movil-h) {
+								padding: 0px ;
+							}
+							ul{
+								text-align: 	center;	
+								
+								li{
+									font: normal 500 em(18) $font1;
+									text-align: center;
+									padding: 10px 30px;
+									cursor: 	pointer;	
+									margin: 	0 20px;
+									display: 	inline-block;
+									color: 	#d4d4d4;
+									border-bottom: 2px solid #ffffff;	
+
+									&.active{
+										border-bottom: 2px solid #da272c;
+										color: 	#000000;			
+									}
+									@include to(tablet) {
+										font: normal 500 em(21) $font1;
+									}
+									@include to(movil-h) {
+										font: normal 500 em(17) $font1;
+										margin-bottom: 	0px;
+										width: 	49%;
+										margin: 	0;
+										border-bottom: 1px solid #d4d4d4;	
+									}
+								}
+							}
+						}
+					}
+					
+				}
+
+				.section9{
+					//background: url("#{$path}/pg1_bg_section4.jpg") no-repeat center center;
+					//background-size: cover;
+					background-color: #ffffff;
+					&__align{
+						width: 100%;
+						max-width: 1100px;
+						margin: auto;
+						
+						@include to(tablet-h) {
+							
+							padding: 	0 40px;
+						}
+						@include to(movil-h) {
+							
+							padding: 	0 20px;
+						}
+
+						
+					}
+					&__header{
+						padding: 20px 0 0px;
+						.breadcrum{
+							width: 100%;
+							padding: 0 0px;
+							ul{
+								text-align: 	left;	
+								li{
+									font: normal 500 em(16) $font1;
+									text-align: center;
+									cursor: 	pointer;
+									margin-right: 	10px;	
+									display: 	inline-block;
+									color: 	#000000;
+								
+									&.active{
+										
+										color: 	#11bde2;			
+									}
+									
+									@include to(movil-h) {
+										font: normal 500 em(14) $font1;
+										margin-bottom: 	0px;
+									}
+								}
+							}
+						}
+					}
+					
+				}
+
+				
+			}
+			&__footer{
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				.section1{
+					width: 	100%;
+					background: #000000;
+					&__align{
+						width: 1100px;
+						margin: 0 auto;
+						@include to(tablet-h) {
+							width: 100%;
+							padding: 0 40px;
+						}
+						@include to(movil-h) {
+							width: 100%;
+							padding: 0 20px;
+						}
+					}
+
+					&__header{
+						position: relative;
+						width: 	100%;
+						padding: 	50px 0 10px;
+						.item__list{
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							@include align-items(center);
+							.item{
+								@include to(tablet) {
+									width: 100%;
+									text-align: center;
+									margin-bottom: 30px;
+									&:last-child{
+										margin-bottom: 0;
+									}
+									
+								}
+								p{
+									font: normal 400 em(14) $font1;
+									color: 	#ffffff;
+									@include to(movil-h) {
+										font: normal 400 em(15) $font1;
+										
+									}
+								}
+								h2{
+									font: normal 700 em(20) $font1;
+									text-align: right;
+									color: 	#ffffff;
+									@include to(tablet) {
+										text-align: center;
+										margin-bottom: 5px;
+										
+									}
+									@include to(movil-h) {
+										font: normal 700 em(18) $font1;
+										
+									}
+								}
+								h3{
+									font: normal 700 em(14) $font1;
+									text-align: right;
+									color: 	#ffffff;
+									@include to(tablet) {
+										text-align: center;
+										
+									}
+									@include to(movil-h) {
+										font: normal 700 em(14) $font1;
+										
+									}
+								}
+								ul{
+									margin-bottom: 	20px;
+									li{
+										display: 	inline-block;	
+										margin-right: 	10px;
+
+									}
+								}
+							}
+						}
+					}
+					&__main{
+						position: relative;
+						width: 	100%;
+						padding: 	34px 0 14px;
+						.item__list{
+							@include flexbox;
+							@include flex-wrap(wrap);
+							@include justify-content(space-between);
+							@include align-items(center);
+							.item{
+								@include to(tablet) {
+									width: 100%;
+									text-align: center;
+									order: 2;
+									&:last-child{
+										order: 1;
+									}
+									
+								}
+								p{
+									font: normal 400 em(14) $font1;
+									color: 	#ffffff;
+									@include to(movil-h) {
+										font: normal 400 em(12) $font1;
+										
+									}
+								}
+								ul{
+									li{
+										margin-left: 20px;
+										@include to(tablet) {
+											margin: 0 10px;
+											width: 100%;
+											margin-bottom: 10px;
+											&:last-child{
+												margin-bottom: 50px;
+											}
+											
+										}
+										display: 	inline-block;	
+										a{
+											font: normal 400 em(14) $font1;	
+											color: 	#11bde2;
+											@include to(movil-h) {
+												font: normal 400 em(14) $font1;
+												
+											}
+										}
+									}
+								}
+								h3{
+									font: normal 700 em(17) $font1;
+									color: 	#ffffff;
+								}	
+							}
+						}
+					}
+
+				}
+		
+			}
+
+		}
+	}
+	&__modal{
+		.page1{
+			//@include sombra($x: 0px, $y: 0px, $prop: 0px, $blur: 14px, $r:165, $g:165, $b:165, $alpha: 0.5);
+			//width: 100%;
+			max-width: 500px;
+			margin: auto;
+			position:relative;
+			padding: 50px 40px 50px 40px;
+			//background-color: $color_b1;
+			//border: 3px solid #00bddf;
+			//@include opacidad(bg, #6e767d, 0.8,claro);
+			@include redondeado(10px, 10px, 10px, 10px);
+
+			background: #ffffff;
+			//background-size: cover;
+
+			/*@include to(tablet) {
+				max-width: 740px;
+			}*/
+
+			/*@include to(movil) {
+				width: auto;
+				padding: 100px 20px 20px 20px;
+				margin: 0 auto;
+				height: calc(100vh);
+				//padding: 0px 0px;
+				//@include redondeado(0px, 0px, 0px, 0px);
+		    overflow-y: auto;
+			}*/
+
+			.section1{
+				&__header{
+					.title{
+						&:before{
+							content:'';
+							display: block;
+							height: 35px;
+							background: url("#{$path}/claro-musica.svg") no-repeat center top;
+							background-size: contain;
+							margin: 5px 0 10px;
+						}
+						//padding-bottom: 10px;
+						margin-bottom: 10px;
+						h3{
+							font: normal 600 em(22) $font1;
+							color: #333333;
+							text-align: center;
+							span{
+								font: normal 400 em(10) $font1;
+								color: #b1b1b1;
+							}
+						}
+					}
+					.info{
+						h3{
+							font: normal 400 em(20) $font1;
+							color: #555555;
+							text-align: center;
+							strong{
+								span{
+									color: #da272c;
+								}
+							}
+						}
+					}
+				}
+				&__main{
+					.content{
+						padding: 15px 0 0 0;
+						p{
+							font: normal 300 em(14) $font1;
+							margin-bottom: 10px;
+						}
+						a{
+							font: normal 300 em(18) $font1;
+				      color: $color_t1;
+				      text-align: center;
+				      background-color: #00bddf;
+				      padding: 15px 60px 15px 50px;
+							//border: 1px solid #ffffff;
+							border: none;
+							display: table;
+							margin: 0 auto;
+
+				      @include redondeado(4px, 4px, 4px, 4px);
+							@include transicion(all,0.2s,ease,0s);
+							//@include sombra(0px,0px, 1px);
+
+							position: relative;
+
+							&.inactive{
+								background-color: #cccccc;
+							}
+							
+							/*@include to(tablet) {
+								width: 100%;
+							}*/
+
+							&:before {
+								content: "\f105";
+				        @include icon(0px);
+				        font-size: 22px;
+				        color: $color_b1;
+				        position: absolute;
+				        top: 15px;
+				        right: 35px;
+				      }
+						}
+					}
+				}
+				
+			}
+
+			&__close{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				z-index: 2;
+				cursor:pointer;
+				width: 40px;
+				height: 44px;
+				background: url("#{$path}/pg1_closemodal2.png") no-repeat center top;
+				background-size: cover;
+				font: normal em(18) $font1;
+				color:white;
+				text-indent: -9999px;
+				@include to(movil) {
+					top: 0px;
+					right: 0px;
+				}
+				/*@include to(movil) {
+					width: 100%;
+					height: auto;
+					padding: 8px 0;
+					top:0px;
+					right:0px;
+					text-indent: 0px;
+					background: #da272c;
+					position: fixed;
+					text-align: center;
+				}*/
+				@include from-to(movil,tablet-h) {
+					//width: 5%;
+				}
+			}
+		}
+		.page2{
+			//@include sombra($x: 0px, $y: 0px, $prop: 0px, $blur: 14px, $r:165, $g:165, $b:165, $alpha: 0.5);
+			//width: 100%;
+			max-width: 500px;
+			margin: auto;
+			position:relative;
+			padding: 50px 40px 50px 40px;
+			background-color: $color_b1;
+			//border: 3px solid #00bddf;
+			//@include opacidad(bg, #6e767d, 0.8,claro);
+			@include redondeado(10px, 10px, 10px, 10px);
+
+			//background: url("#{$path}/confeti.svg") no-repeat center center;
+			background-size: cover;
+
+			/*@include to(tablet) {
+				max-width: 740px;
+			}*/
+
+			@include to(movil) {
+			padding: 40px 20px 30px 20px;
+		    overflow-y: auto;
+			}
+
+			.section1{
+				&__header{
+					.title{
+						&:before{
+							content:'';
+							display: block;
+							height: 35px;
+							background: url("#{$path}/claro-musica.svg") no-repeat center top;
+							background-size: contain;
+							margin: 5px 0 10px;
+						}
+						//padding-bottom: 10px;
+						margin-bottom: 10px;
+						h3{
+							font: normal 600 em(22) $font1;
+							color: #333333;
+							text-align: center;
+							span{
+								font: normal 400 em(10) $font1;
+								color: #b1b1b1;
+							}
+						}
+					}
+					.info{
+						h3{
+							font: normal 600 em(20) $font1;
+							color: #00bddf;
+							text-align: center;
+							strong{
+								span{
+									color: #da272c;
+								}
+							}
+						}
+					}
+				}
+				&__main{
+					.content{
+						padding: 15px 0 0 0;
+						p{
+							font: normal 300 em(14) $font1;
+							margin-bottom: 10px;
+							b{
+								font-weight: 300;
+								color: #ee2124;
+							}
+						}
+						a{
+							font: normal 300 em(16) $font1;
+				      color: #00bddf;
+				   //    text-align: center;
+				   //    background-color: #00bddf;
+				   //    padding: 15px 60px 15px 50px;
+							// //border: 1px solid #ffffff;
+							// border: none;
+							// display: table;
+							// margin: 0 auto;
+
+				   //    @include redondeado(4px, 4px, 4px, 4px);
+							// @include transicion(all,0.2s,ease,0s);
+							// //@include sombra(0px,0px, 1px);
+
+							// position: relative;
+
+							// &.inactive{
+							// 	background-color: #cccccc;
+							// }
+							
+							// @include to(tablet) {
+							// 	width: 100%;
+							// }
+
+							// &:before {
+							// 	content: "\f105";
+				   //      @include icon(0px);
+				   //      font-size: 22px;
+				   //      color: $color_b1;
+				   //      position: absolute;
+				   //      top: 15px;
+				   //      right: 35px;
+				   //    }
+						}
+					}
+				}
+				
+			}
+
+			&__close{
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				z-index: 2;
+				cursor:pointer;
+				width: 40px;
+				height: 44px;
+				background: url("#{$path}/pg1_closemodal2.png") no-repeat center top;
+				background-size: cover;
+				font: normal em(18) $font1;
+				color:white;
+				text-indent: -9999px;
+				@include to(movil) {
+					top: 0px;
+					right: 0px;
+				}
+				/*@include to(movil) {
+					width: 100%;
+					height: auto;
+					padding: 8px 0;
+					top:0px;
+					right:0px;
+					text-indent: 0px;
+					background: #da272c;
+					position: fixed;
+					text-align: center;
+				}*/
+				@include from-to(movil,tablet-h) {
+					//width: 5%;
+				}
+			}
+		}
+	}
+
+}

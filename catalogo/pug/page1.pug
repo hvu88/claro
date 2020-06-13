@@ -1,0 +1,298 @@
+extends includes/master
+
+block vars
+	- var script = 1;
+	- var css = 1;
+	- var title = 'Catálogo';
+	- var modal = 1;
+
+block content
+	.page1
+		.page1__header
+			section.section1
+				.section1__align
+					.section1__header
+						.item__list
+							.item
+								p Distribuidor Autorizado Claro
+							.item
+								h3 Llámanos al (01) 674 4475
+			section.section2
+				.section2__align
+					.section2__header
+						.item__list
+							.item
+								h2  Nombre de Distribuidor
+
+							.menu#burger
+								div
+								div
+								div
+
+							
+							.item
+								ul
+									li 
+										a(href="#") Promociones
+									li 
+										a.active(href="#" target="_blank") Cámbiate o renueva
+									
+
+			.menu-bar#menu_item
+				ul
+					li 
+						a.active(href="#") Promociones
+					li 
+						a(href="#" target="_blank") Cámbiate o renueva
+				
+		.page1__main
+			section.section4
+				.section4__align
+					.section4__header
+						.title
+							h2 Catálogo de equipos
+					.section4__main
+							.item__filter
+								p Lo quiero en
+								dt
+									select( name='productointeres')
+										option(value='movil-renovacion' selected ) Prepago
+										option(value='movil-renovacion' ) Prepago
+
+								dt.md
+									select.form__select1( name='productointeres')
+										option(value='movil-renovacion' selected ) Renovación
+										option(value='movil-renovacion' ) Renovación
+
+								dt.md
+									select.form__select1( name='productointeres')
+										option(value='movil-renovacion' selected ) 18 cuotas
+										option(value='movil-renovacion' ) 18 cuotas
+
+								dt.mb
+									select( name='productointeres')
+										option(value='movil-renovacion' selected ) Samsung
+										option(value='movil-renovacion' ) Apple
+										option(value='movil-renovacion' ) Huawei
+										option(value='movil-renovacion' ) Xiaomi
+										option(value='movil-renovacion' ) LG
+
+
+								p Marca
+
+								.typecheck
+									input(type="checkbox")
+									label 
+									small Samsung
+
+								.typecheck
+									input(type="checkbox")
+									label 
+									small Apple
+
+
+								.typecheck
+									input(type="checkbox")
+									label 
+									small Huawei
+
+
+								.typecheck
+									input(type="checkbox")
+									label 
+									small Xiaomi
+
+								.typecheck
+									input(type="checkbox")
+									label 
+									small LG
+
+								span Ver más
+
+							.item__list
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Samsung
+											b Galaxy S20
+									.item__price
+										//span 1
+										h4
+											|  S/ 125
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+											
+
+								
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Samsung
+											b Galaxy A71
+									.item__price
+										//span 1
+										h4
+											|  S/ 315
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+
+
+								
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Motorola
+											b Moto G7 Plus
+									.item__price
+										//span 1
+										h4
+											|  S/ 225
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+									
+
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Apple
+											b iPhone XR
+									.item__price
+										//span 1
+										h4
+											|  S/ 329
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+
+
+							
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Motorola
+											b Moto G7 Plus
+									.item__price
+										//span 1
+										h4
+											|  S/ 329
+
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+									
+
+							
+								.item
+									//a(href="detalle.html" )
+									.item__image
+										img(src=path+'assets/galaxy-a-71-frontal-424-x-424.png')
+									.item__title
+										//span 1
+										h3
+											| Apple
+											b iPhone XR
+									.item__price
+										//span 1
+										h4
+											|  S/ 329
+
+									.item__plan
+										//span 1
+										h4
+											|  Plan Max Ilimitado 85.00
+
+
+								.pagination
+									ul
+										li <
+										li.active 1
+										li 2
+										li 3
+										li >
+									span Ver más
+
+		.page1__footer
+			section.section1
+				.section1__align
+					.section1__header
+							.item__list
+								.item
+									ul
+										li 
+											a(href="#" target="_blank") 
+												img(src=path+'assets/fb.svg')
+
+										li 
+											a(href="#" target="_blank") 
+												img(src=path+'assets/wsp.svg')
+
+									p Av Ramon Vargas Machuca 300 
+										br
+										| San Juan de Miraflores
+
+								.item
+									h2 (01) 674 4475
+									h3 distribuidor@ejemplo.pe
+
+					.section1__main
+							.item__list
+								.item
+									p  Nombre de distribuidor (C) Distribuidor Oficial Claro
+
+								.item 
+									ul
+										li
+											a(href="#" target="_blank") Términos y condiciones 
+
+										li 
+											a(href="#" target="_blank") Política de privacidad 
+
+						
+
+block css
+	style(type="text/css").
+			
+			.fade-enter-active, .fade-leave-active {
+				transition: opacity 0.25s ease-out;
+			}
+
+			.fade-enter, .fade-leave-to {
+				opacity: 0;
+			}
+
+block javascript 
+	script(type='text/javascript' src=path+'js/library/slick.js') 
+	script(type='text/javascript' src=path+'js/library/lodash.js') 
+	script(type='text/javascript' src=path+'js/library/vee-validate.min.js') 
+	script(type='text/javascript' src=path+'js/common.js')
+	script(type='text/javascript').
+		main.init("page1");
+

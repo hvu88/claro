@@ -1,0 +1,61 @@
+aside {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  max-width: 180px;
+  max-height: 268px;
+  width: 100%;
+  height: 100%;
+  background: url("#{$path}/side_banner.svg") no-repeat center center;
+  z-index: 101;
+  @include to(movil) {
+		max-width: 95px;
+    max-height: 141px;
+	}
+  a{
+  	width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+.layout{
+	&__main{
+		
+	}
+	&__modal{
+		display: none;
+		.overlay {
+		  @include opacidad(bg, #000000, 0.7,claro);
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  z-index: 102; 
+		}
+
+		.box {
+		  width: 100%;
+		  height: 100%;
+		  z-index: 20;
+		  display: table;
+
+  		&__inset {
+		    display: table-cell;
+		    vertical-align: middle;
+		    width: 100%;
+		    position: relative; 
+		    /*&--close{
+		    	position: absolute;
+		      top: -10;
+		      right: -10;
+		      z-index: 2;
+		      cursor: pointer;
+		    }*/
+  		}
+  	}
+  }
+  &__modal.active{
+		display: block;
+  }
+}

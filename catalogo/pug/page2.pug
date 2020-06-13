@@ -1,0 +1,375 @@
+extends includes/master
+
+block vars
+	- var script = 1;
+	- var css = 1;
+	- var title = 'Cobertura sin frontera';
+	- var modal = 1;
+
+block content
+	.page1
+		.page1__header
+			section.section1
+				.section1__align
+					.section1__header
+						.item__list
+							.item
+								p Distribuidor Autorizado Claro
+							.item
+								h3 Llámanos al (01) 674 4475
+			section.section2
+				.section2__align
+					.section2__header
+						.item__list
+							.item
+								h2  Nombre de Distribuidor
+
+							.menu#burger
+								div
+								div
+								div
+
+							
+							.item
+								ul
+									li 
+										a(href="#") Promociones
+									li 
+										a.active(href="#" target="_blank") Cámbiate o renueva
+									//li 
+										a(href="#" target="_blank") Hogar 
+
+
+			.menu-bar#menu_item
+				ul
+					li 
+						a.active(href="#") Promociones
+					li 
+						a(href="#" target="_blank") Cámbiate o renueva
+					//li 
+						a(href="#" target="_blank") Hogar 
+
+
+
+
+		form.page1__main(@submit.prevent="validate('form_concurse1')" data-vv-scope='form_concurse1')
+
+			section.section9
+				.section9__align
+					.section9__header
+						.breadcrum
+							ul
+								li.active Catálogo de equipo
+								li / Iphone 8 
+
+			section.section8
+				.section8__align
+					.section8__header
+						.tabs
+							ul
+								li.active Equipo
+								li Detalles
+					
+
+
+
+			section.section5
+				.section5__align
+					//.section5__header
+						.title
+							h2 Catálogo de equipos
+					.section5__main
+
+							.item__imagen
+								.item__title
+									h3
+										| Samsung
+										b Galaxy S20
+
+								img(src=path+'assets/phone.png')
+
+								.subimagen
+									img(src=path+'assets/phone.png')
+									img(src=path+'assets/phone2.png')
+									img(src=path+'assets/phone2.png')
+
+
+							.item__list
+								.item
+									.item__title
+										//span 1
+										h3
+											| Samsung
+											b Galaxy S20
+										
+									.item__price
+										.type-descript
+											span Precio de equipo
+											h4
+												|   125 
+
+											small Precio al contado S/ 3450
+
+											p Con acuerdo de equipos a 18 meses y acuerdo de venta en cuotas. En plan Postpago Max Internacional 119.90.
+
+										.type-select
+											dt
+												label MODALIDAD
+												select( name='productointeres')
+													option(value='movil-renovacion' selected ) RENOVACIÓN
+													option(value='movil-renovacion' ) RENOVACIÓN
+
+											dt.l
+												label Número de cuotas
+												select.form__select1( name='productointeres')
+													option(value='movil-renovacion' selected ) 18 CUOTAS
+													option(value='movil-renovacion' ) 18 CUOTAS
+
+
+
+					//.section5__footer
+						.info
+							p 
+								a(href="#" target="_blank") Ver más
+
+
+			section.section6
+				.section6__align
+					.section6__header
+						.title
+							h2 Selecciona un plan
+					.section6__main
+							.item__list#list6
+								.item
+									.item__title
+										//span 2 Play
+										h3 Max Internacional 119
+
+
+									.item__price
+										span Precio del plan
+										h4 S/ 119.90 al mes
+
+									.item__info
+										ul
+											li Ilimitados
+												small Minutos
+
+											li Ilimitada
+												small RPC
+
+											li 20 GB
+												small Internet
+
+											li Ilimitados
+												small SMS
+
+
+								.item
+									.item__title
+										//span 2 Play
+										h3 Max Internacional 119
+
+
+									.item__price
+										span Precio del plan
+										h4 S/ 119.90 al mes
+
+									.item__info
+										ul
+											li Ilimitados
+												small Minutos
+
+											li Ilimitada
+												small RPC
+
+											li 20 GB
+												small Internet
+
+											li Ilimitados
+												small SMS
+
+								.item
+									.item__title
+										//span 2 Play
+										h3 Max Internacional 119
+
+
+									.item__price
+										span Precio del plan
+										h4 S/ 119.90 al mes
+
+									.item__info
+										ul
+											li Ilimitados
+												small Minutos
+
+											li Ilimitada
+												small RPC
+
+											li 20 GB
+												small Internet
+
+											li Ilimitados
+												small SMS
+
+
+								.item
+									.item__title
+										//span 2 Play
+										h3 Max Internacional 119
+
+
+									.item__price
+										span Precio del plan
+										h4 S/ 119.90 al mes
+
+									.item__info
+										ul
+											li Ilimitados
+												small Minutos
+
+											li Ilimitada
+												small RPC
+
+											li 20 GB
+												small Internet
+
+											li Ilimitados
+												small SMS
+
+
+
+
+
+					//.section6__footer
+						.info
+							p 
+								a(href="#" target="_blank") Ver más
+
+
+
+			section.section7
+				.section7__align
+					.section7__header
+						.title
+							h2 ¡Estás a un paso de conseguir tu nuevo equipo!
+							span Déjanos tus datos y te llamaremos
+					.section7__main
+							.item__list
+								.form
+									dl.type1
+										dt
+											//label.form__label1 Nombres y Apellidos
+											input.form__text1(type='text', name='nombres', v-model='register1.nombres', v-validate="'required|string|min:3'" , placeholder='Nombre y Apellido')
+										dd
+											span.form__error(v-show="errors.has('form_concurse1.nombres')") * {{ errors.first('form_concurse1.nombres') }}
+
+
+									dl.type1
+										dt
+											//label.form__label1 Número de celular
+											input.form__text1(type='text', name='telefono', v-model='register1.telefono', v-validate="'required|numeric|min:9|max:9'" , placeholder='Número de celular')
+										dd
+											span.form__error(v-show="errors.has('form_concurse1.telefono')") * {{ errors.first('form_concurse1.telefono') }}
+
+
+								
+									dl.row3 
+										dt 
+											.form__checkbox1 
+												input(type='checkbox', name='datospersonales', v-model='register1.datospersonales', v-validate="'required'")#Datos
+												label(for="Datos") 
+												small 
+													| Autorizo
+													a(@click="showModal('active2')") el tratamiento de mis datos personales 
+												span.form__error(v-show="errors.has('form_concurse1.datospersonales')") * {{ errors.first('form_concurse1.datospersonales') }}
+
+												
+
+
+									dl
+										dt
+											.form__buttons
+												button.button1(onclick="event.preventDefault()"  type='submit' :disabled="errors.any() || !isCompleted1" :class="{ inactive: errors.any() || !isCompleted1 }") Enviar
+
+		.page1__footer
+			section.section1
+				.section1__align
+					.section1__header
+							.item__list
+								.item
+									ul
+										li 
+											a(href="#" target="_blank") 
+												img(src=path+'assets/fb.svg')
+
+										li 
+											a(href="#" target="_blank") 
+												img(src=path+'assets/wsp.svg')
+
+									p Av Ramon Vargas Machuca 300 
+										br
+										| San Juan de Miraflores
+
+								.item
+									h2 (01) 674 4475
+									h3 distribuidor@ejemplo.pe
+
+					.section1__main
+							.item__list
+								.item
+									p  Nombre de distribuidor (C) Distribuidor Oficial Claro
+
+								.item 
+									ul
+										li
+											a(href="#" target="_blank") Términos y condiciones 
+
+										li 
+											a(href="#" target="_blank") Política de privacidad 
+
+
+							
+
+
+block modal
+	.page2(v-if='modal.page2')
+		.page1__close(@click='closeModal()') Cerrar
+		section.section1
+			.section1__header
+				.info 
+					h3 Tratamiento de datos personales
+			.section1__main
+				.content
+					p Otorga su consentimiento a 
+						b Nombre del DAC 
+						|    con domicilio en
+						b  Dirección del domicilio del DAC, 
+						|   para utilizar los datos personales que ha registrado, con la finalidad de recibir información sobre productos y/o servicios que ha solicitado mediante este formulario. Es oportuno mencionarle que sus datos personales serán registrados en nuestro Banco de Datos que ha sido declarado a la Autoridad Nacional de Protección de Datos Personales.
+
+					p Autoridad Nacional de Protección de Datos Personales. Usted podrá revocar su consentimiento y/o ejercer los derechos ARCO (Acceso, Rectificación, Cancelación y Oposición); en 
+						b    Indicar el punto de atención que el DAC ha designados para tal efecto. Nombre del DAC
+						|     garantiza por su parte, el respeto y observancia al ejercicio de dichos derechos. Para mayor información revisa nuestra 
+						b Política de Seguridad del DAC (insertar enlace)
+						
+
+block css
+	style(type="text/css").
+			
+			.fade-enter-active, .fade-leave-active {
+				transition: opacity 0.25s ease-out;
+			}
+
+			.fade-enter, .fade-leave-to {
+				opacity: 0;
+			}
+
+block javascript 
+	script(type='text/javascript' src=path+'js/library/slick.js') 
+	script(type='text/javascript' src=path+'js/library/lodash.js') 
+	script(type='text/javascript' src=path+'js/library/vee-validate.min.js') 
+	script(type='text/javascript' src=path+'js/common.js')
+	script(type='text/javascript').
+		main.init("page1");
+

@@ -1,0 +1,43 @@
+include mixin
+
+//- var path = "https://static.claro.com.pe/landings/havas/distribuidor_catalogo/";
+- var path = "";
+
+block vars
+doctype
+html(lang='es')
+	head
+		title #{title}
+		meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+		meta(name='viewport', content='width=device-width,initial-scale=1,user-scalable=no')
+			
+		script(type='text/javascript' src= path+'js/library/jquery.js')
+		if css == 1
+			+block_css
+		link(rel='stylesheet' type='text/css' href=path+'css/common.css')
+
+		script(language='javascript').
+			function ventanaSecundaria (URL){ 
+				window.open(URL,"ventana1","width=400,height=500,scrollbars=NO") 
+			}
+			
+
+
+	body
+		//aside
+			//a(href="http://www.claro.com.pe/personas/claro-club/latam/" target="_blank")
+		.layout#app
+			.layout__main
+				+block_content
+			if modal == 1
+				transition(name='fade')
+					.layout__modal(v-if='modal.show' v-bind:class="{active: modal.show}")
+						.overlay
+							.box
+								.box__inset
+									+block_modal
+
+		script(type='text/javascript' src=path+'js/library/vue.js')
+		
+		if script == 1
+			+block_javascript
